@@ -34,3 +34,19 @@ docker run -p 5000:5000 my_speech_to_text_app
 "Transcribe"ボタンを押します。
 文字起こしが完了すると、テキストファイルがダウンロードされます。
 このREADME.mdをプロジェクトのルートディレクトリに保存すれば、他の開発者やユーザーがこのアプリケーションを簡単に理解できるようになります。
+
+### 備考
+ルートディレクトリ配下にmodelsディレクトリを作成し、その中にdeepspeech-0.9.3-models.pbmmのモデルを配置するとappが起動します。
+
+
+構造
+.
+├── Dockerfile
+├── README.md
+├── app
+│   ├── main.py
+│   └── templates
+│       └── index.html
+├── models
+│   └── deepspeech-0.9.3-models.pbmm
+└── requirements.txt
